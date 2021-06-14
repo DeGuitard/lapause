@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr" <% if (page == 'index') { %> class="full-bg-img" <% } %> >
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS Deps -->
+    <link href="//fonts.googleapis.com/css?family=Sue+Ellen+Francisco" rel="stylesheet" type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type='text/css'>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.19/css/lightgallery.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/main-1.2.css" rel="stylesheet" type='text/css'>
+
+    <!-- JS Deps -->
+    <script src="//code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.19/js/lightgallery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.19/js/lg-thumbnail.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.19/js/lg-fullscreen.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+
+    <title>La Pause - <%= title %></title>
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-bottom">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">La Pause</a>
+        </div>
+    </div>
+</nav>
+
+<%- body %>
+<div class="navbar-fix"></div>
+<div id="scroll-down" class="hidden-sm">
+    <a href="#" id="scroll-down-button"><span></span></a>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "url": "http://lapause.roscanvel.com",
+  "contactPoint": [{
+    "@type": "ContactPoint",
+    "telephone": "(+33)6 75 78 75 65",
+    "contactType": "Réservation et informations",
+    "availableLanguage" : ["English","French"]
+  }],
+  "location": [{
+    "@type": "PostalAddress",
+    "addressCountry": "FRANCE",
+    "addressLocality": "Roscanvel",
+    "postalCode": "29570",
+    "streetAddress": "3 Chemin de Trevarguen Izella"
+  }]
+}
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        var scrollDownDiv = $('#scroll-down');
+        if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+            scrollDownDiv.hide();
+        }
+        if (scrollDownDiv) {
+            $(window).scroll(function () {
+                if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+                    scrollDownDiv.fadeOut(250);
+                }
+            });
+            $('#scroll-down-button').click(function(e) {
+                e.preventDefault();
+                $('html, body').animate({ scrollTop: $(window).scrollTop() + $(window).height()}, 500, 'swing');
+            });
+        }
+    });
+</script>
+
+</body>
+</html>
