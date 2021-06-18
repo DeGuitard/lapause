@@ -36,6 +36,15 @@
             </button>
             <a class="navbar-brand" href="/">La Pause</a>
         </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li <% if (page == 'gite') { %> class="active" <% }%>><a href="/le-gite">Le gîte</a></li>
+                <li <% if (page == 'rosc') { %> class="active" <% }%>><a href="/roscanvel">Roscanvel</a></li>
+                <li <% if (page == 'pres') { %> class="active" <% }%>><a href="/presqu-ile-crozon">Presqu'île de Crozon</a></li>
+                <li <% if (page == 'book') { %> class="active" <% }%>><a href="/reserver">Réserver</a></li>
+                <li <% if (page == 'cont') { %> class="active" <% }%>><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
     </div>
 </nav>
 

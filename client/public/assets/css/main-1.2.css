@@ -135,15 +135,15 @@ h1 {
     margin: 20px 0;
 }
 
-.img-banner-skyline, .img-banner-wood, .img-banner-horse, .img-banner-find-us,
+.img-banner-skyline, .img-banner-stone, .img-banner-horse, .img-banner-find-us,
 .img-banner-book, .img-banner-bridge, .img-banner-equipment {
     width: 100%;
     height: 33%;
     margin: 50px 0;
 }
 
-.img-banner-wood {
-    background: url(/assets/img/wood.jpg) no-repeat center center fixed;
+.img-banner-stone {
+    background: url(/assets/img/stone.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
