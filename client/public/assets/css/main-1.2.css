@@ -135,7 +135,7 @@ h1 {
     margin: 20px 0;
 }
 
-.img-banner-skyline, .img-banner-stone, .img-banner-horse, .img-banner-find-us,
+.img-banner-garden, .img-banner-stone, .img-banner-horse, .img-banner-find-us,
 .img-banner-book, .img-banner-bridge, .img-banner-equipment {
     width: 100%;
     height: 33%;
@@ -143,19 +143,11 @@ h1 {
 }
 
 .img-banner-stone {
-    background: url(/assets/img/stone.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: url(/assets/img/stone.webp) no-repeat center center fixed;
 }
 
-.img-banner-skyline {
-    background: url(/assets/img/skyline.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+.img-banner-garden {
+    background: url(/assets/img/garden.webp) no-repeat center center fixed;
 }
 
 .img-banner-horse {
@@ -191,7 +183,7 @@ h1 {
 }
 
 .img-banner-equipment {
-    background: url(/assets/img/equipment.jpg) no-repeat center center fixed;
+    background: url(/assets/img/equipment.webp) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
