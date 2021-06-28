@@ -143,11 +143,11 @@ h1 {
 }
 
 .img-banner-stone {
-    background: url(/assets/img/stone.webp) no-repeat center center fixed;
+    background: url(/assets/img/stone.jpg) no-repeat center center fixed;
 }
 
 .img-banner-garden {
-    background: url(/assets/img/garden.webp) no-repeat center center fixed;
+    background: url(/assets/img/garden.jpg) no-repeat center center fixed;
 }
 
 .img-banner-horse {
@@ -183,7 +183,7 @@ h1 {
 }
 
 .img-banner-equipment {
-    background: url(/assets/img/equipment.webp) no-repeat center center fixed;
+    background: url(/assets/img/equipment.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
